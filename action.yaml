@@ -38,4 +38,4 @@ runs:
     - name: Run yamllint
       shell: bash
       working-directory: ${{ steps.inputs.outputs.working_directory }}
-      run: yamllint {{ inputs.files }}
+      run: yamllint ${{ inputs.files }}

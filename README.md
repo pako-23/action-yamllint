@@ -1,7 +1,6 @@
 # yamllint GitHub Action
 
-A GitHub Action to lint YAML files using
-[yamllint].
+A GitHub Action to lint YAML files using [yamllint].
 
 ## Usage
 
@@ -43,6 +42,6 @@ jobs:
 
 [mit]:
   https://github.com/pako-23/action-yamllint/blob/main/LICENSE
-[yamllint]
+[yamllint]:
   https://yamllint.readthedocs.io/
 

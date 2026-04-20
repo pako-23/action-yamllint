@@ -1,5 +1,5 @@
 [![Latest Release](https://img.shields.io/github/v/release/pako-23/action-yamllint?sort=semver)](https://github.com/pako-23/action-yamllint/releases/latest)
-![Lint YAML](.github/workflows/lint.yaml/badge.svg)
+[![Lint YAML](https://github.com/pako-23/action-yamllint/actions/workflows/lint.yaml/badge.svg)](https://github.com/pako-23/action-yamllint/actions/workflows/lint.yaml)
 
 # yamllint GitHub Action
 

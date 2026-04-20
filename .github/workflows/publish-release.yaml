@@ -20,8 +20,7 @@ jobs:
 
       - name: Update major version tag
         run: |
-          MAJOR_VERSION="$(echo '${{ github.ref_name }}' | cut -f1 -d '.')"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -f "$MAJOR_VERSION" --points-at '${{ github.ref_name }}'
+          git tag -f "$(echo '${{ github.ref_name }}' | cut -f1 -d '.')" '${{ github.ref_name }}'
           git push origin --tags

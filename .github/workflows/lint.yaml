@@ -2,8 +2,11 @@
 name: Lint YAML
 
 on:
-  - push
-  - pull_request
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   yamllint:

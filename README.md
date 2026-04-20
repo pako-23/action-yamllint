@@ -5,7 +5,7 @@ A GitHub Action to lint YAML files using [yamllint].
 ## Usage
 
 ```yaml
-- uses: pako-23/action-yamllint@v1
+- uses: pako-23/action-yamllint@v0
   with:
     files: .
     working_directory: ${{ github.workspace }}
@@ -14,7 +14,7 @@ A GitHub Action to lint YAML files using [yamllint].
 ## Inputs
 
 | Input | Description | Default |
-|-------|-------------|---------|
+|-------|-------------|:-------:|
 | `files` | Files or directories to check | `.` |
 | `working_directory` | The directory where to run yamllint from | `${{ github.workspace }}` |
 
@@ -30,10 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: pako-23/action-yamllint@v1
-        with:
-          files: .
+      - uses: pako-23/action-yamllint@v0
 ```
 
 ## License
@@ -44,4 +41,3 @@ jobs:
   https://github.com/pako-23/action-yamllint/blob/main/LICENSE
 [yamllint]:
   https://yamllint.readthedocs.io/
-

@@ -22,5 +22,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -f "$(echo '${{ github.ref_name }}' | cut -f1 -d '.')" '${{ github.ref_name }}'
+          MAJOR="$(echo '${{ github.ref_name }}' | cut -f1 -d '.')"
+          git tag -f "$MAJOR" '${{ github.ref_name }}'
           git push origin --tags

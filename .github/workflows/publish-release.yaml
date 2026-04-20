@@ -24,4 +24,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           MAJOR="$(echo '${{ github.ref_name }}' | cut -f1 -d '.')"
           git tag -f "$MAJOR" '${{ github.ref_name }}'
-          git push origin --tags
+          git push origin --tags --force

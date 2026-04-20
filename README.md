@@ -23,7 +23,17 @@ A GitHub Action to lint YAML files using [yamllint].
 ```yaml
 name: Lint YAML
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.yaml'
+      - '**.yml'
+  pull_request:
+    paths:
+      - '**.yaml'
+      - '**.yml'
 
 jobs:
   yamllint:

@@ -1,5 +1,5 @@
 ---
-name: yamllint
+name: Lint YAML files
 description: Run yamllint
 author: pako-23 <pasqualepolverino98@gmail.com>
 branding:

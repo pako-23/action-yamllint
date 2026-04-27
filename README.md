@@ -1,18 +1,10 @@
 [![Latest Release](https://img.shields.io/github/v/release/pako-23/action-yamllint?sort=semver)](https://github.com/pako-23/action-yamllint/releases/latest)
 [![Lint YAML](https://github.com/pako-23/action-yamllint/actions/workflows/lint.yaml/badge.svg)](https://github.com/pako-23/action-yamllint/actions/workflows/lint.yaml)
+[![License](https://img.shields.io/github/license/pako-23/action-hadolint)](LICENSE)
 
 # yamllint GitHub Action
 
 A GitHub Action to lint YAML files using [yamllint].
-
-## Usage
-
-```yaml
-- uses: pako-23/action-yamllint@v0
-  with:
-    files: .
-    working_directory: ${{ github.workspace }}
-```
 
 ## Inputs
 
